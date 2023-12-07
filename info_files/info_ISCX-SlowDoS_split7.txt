@@ -1,0 +1,6 @@
+Informasi hasil pemindaian untuk ISCX-SlowDoS_split7.pcap:
+Total Alamat IP Sumber: 74
+Total Jumlah Byte: 22548
+Alamat IP Sumber dengan Frekuensi Tertinggi: 67.220.214.50
+Rata-Rata Byte: 304.7027027027027
+Jumlah Frekuensi: 363

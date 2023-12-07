@@ -1,0 +1,70 @@
+Informasi hasil pemindaian untuk ISCX-SlowDoS_split1.pcap:
+Total Alamat IP Sumber: 33
+Total Jumlah Byte: 14104
+Alamat IP Sumber dengan Frekuensi Tertinggi: 192.168.5.122
+Rata-Rata Byte: 427.3939393939394
+Jumlah Frekuensi: 227
+
+Informasi hasil pemindaian untuk ISCX-SlowDoS_split2.pcap:
+Total Alamat IP Sumber: 36
+Total Jumlah Byte: 10926
+Alamat IP Sumber dengan Frekuensi Tertinggi: 192.168.5.122
+Rata-Rata Byte: 303.5
+Jumlah Frekuensi: 176
+
+Informasi hasil pemindaian untuk ISCX-SlowDoS_split6.pcap:
+Total Alamat IP Sumber: 89
+Total Jumlah Byte: 23560
+Alamat IP Sumber dengan Frekuensi Tertinggi: 192.168.5.122
+Rata-Rata Byte: 264.7191011235955
+Jumlah Frekuensi: 376
+
+Informasi hasil pemindaian untuk ISCX-SlowDoS_split5.pcap:
+Total Alamat IP Sumber: 79
+Total Jumlah Byte: 20874
+Alamat IP Sumber dengan Frekuensi Tertinggi: 192.168.5.122
+Rata-Rata Byte: 264.2278481012658
+Jumlah Frekuensi: 331
+
+Informasi hasil pemindaian untuk ISCX-SlowDoS_split.pcap:
+Total Alamat IP Sumber: 30
+Total Jumlah Byte: 17978
+Alamat IP Sumber dengan Frekuensi Tertinggi: 192.168.5.122
+Rata-Rata Byte: 599.2666666666667
+Jumlah Frekuensi: 289
+
+Informasi hasil pemindaian untuk ISCX-SlowDoS_split3.pcap:
+Total Alamat IP Sumber: 45
+Total Jumlah Byte: 16766
+Alamat IP Sumber dengan Frekuensi Tertinggi: 192.168.5.122
+Rata-Rata Byte: 372.5777777777778
+Jumlah Frekuensi: 270
+
+Informasi hasil pemindaian untuk ISCX-SlowDoS_split4.pcap:
+Total Alamat IP Sumber: 41
+Total Jumlah Byte: 18136
+Alamat IP Sumber dengan Frekuensi Tertinggi: 192.168.5.122
+Rata-Rata Byte: 442.3414634146341
+Jumlah Frekuensi: 292
+
+Informasi hasil pemindaian untuk ISCX-SlowDoS_split7.pcap:
+Total Alamat IP Sumber: 74
+Total Jumlah Byte: 22548
+Alamat IP Sumber dengan Frekuensi Tertinggi: 67.220.214.50
+Rata-Rata Byte: 304.7027027027027
+Jumlah Frekuensi: 363
+
+Informasi hasil pemindaian untuk ISCX-SlowDoS_split8.pcap:
+Total Alamat IP Sumber: 57
+Total Jumlah Byte: 55952
+Alamat IP Sumber dengan Frekuensi Tertinggi: 67.220.214.50
+Rata-Rata Byte: 981.6140350877193
+Jumlah Frekuensi: 900
+
+Informasi hasil pemindaian untuk ISCX-SlowDoS_split9.pcap:
+Total Alamat IP Sumber: 50
+Total Jumlah Byte: 27158
+Alamat IP Sumber dengan Frekuensi Tertinggi: 67.220.214.50
+Rata-Rata Byte: 543.16
+Jumlah Frekuensi: 438
+

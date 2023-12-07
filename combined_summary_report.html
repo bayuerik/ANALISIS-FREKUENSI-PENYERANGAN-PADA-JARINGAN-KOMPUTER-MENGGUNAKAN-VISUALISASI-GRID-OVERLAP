@@ -1,0 +1,5035 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANALISIS FREKUENSI PENYERANGAN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-c8mDEPLaG2Cm04u6lGs4RjsqC1paf8QTUSVv4B5/8KUCaVaLzz4eyYacuQYKyax8" crossorigin="anonymous">
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+    <style type="text/css">
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #393E46;
+            color: #EEEEEE;
+        }
+
+        header {
+            background-color: #222831;
+            color: #00ADB5;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        main {
+            margin: 8px;
+            padding: 8px;
+            background-color: #EEEEEE;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 3s  forwards; 
+        }
+
+        h2 {
+            color: #222831;
+            border: 2px solid #00ADB5;
+            padding: 10px;
+            border-radius: 15px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: fadeIn 4s ease-in-out;
+            animation: fadeInWidth 4s linear forwards;
+        }
+
+        p {
+            text-align: left;
+            margin-left: 20px;
+            line-height: 1.6;
+            color: #393E46;
+            font-size: 1em;
+            font-family: monospace;
+            border-right: 5px solid;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInWidth {
+            from {
+                width: 0;
+            }
+            to {
+                width: 97%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ANALISIS FREKUENSI PENYERANGAN PADA JARINGAN KOMPUTER MENGGUNAKAN VISUALISASI GRID OVERLAP</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Deskripsi</h2>
+            <p>
+                    <span id="deskripsi">Analisis Frekuensi Penyerangan pada Jaringan Komputer menggunakan Visualisasi Grid Overlap <br> 
+                    merupakan metode analisis keamanan jaringan yang memanfaatkan teknik visualisasi data berbasis grid.<br> 
+                    Dengan menggunakan Teknik ini memungkinkan para administrator jaringan merekam dan merepresentasikan <br> 
+                    dalam bentuk grid overlap untuk dengan cepat mengidentifikasi intensitas, melacak serangan, dan <br>
+                    mengambil tindakan pencegahan keamanan secara efektif. </span>
+            </p>
+        </section>
+        <section>
+            <h2>Hasil Pemindaian Keseluruhan</h2>
+            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="fd5c3eb2fe2c4c658a1cf88de955b70d" class="chart-container" style="width:1000px; height:600px; "></div>
+    <script>
+        var chart_fd5c3eb2fe2c4c658a1cf88de955b70d = echarts.init(
+            document.getElementById('fd5c3eb2fe2c4c658a1cf88de955b70d'), 'white', {renderer: 'canvas'});
+        var option_fd5c3eb2fe2c4c658a1cf88de955b70d = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "Frekuensi",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                945,
+                86,
+                92,
+                1,
+                5,
+                21,
+                13,
+                5,
+                3,
+                4,
+                6,
+                45,
+                73,
+                2,
+                1,
+                1,
+                18,
+                5,
+                1,
+                3,
+                1,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                6,
+                3,
+                72,
+                2,
+                1,
+                1,
+                17,
+                1,
+                34,
+                36,
+                2,
+                6,
+                16,
+                1,
+                6,
+                19,
+                2,
+                10,
+                12,
+                6,
+                6,
+                40,
+                2,
+                6,
+                2,
+                3,
+                4,
+                1,
+                14,
+                13,
+                23,
+                6,
+                8,
+                21,
+                8,
+                2,
+                30,
+                10,
+                1,
+                2,
+                6,
+                9,
+                2,
+                48,
+                8,
+                3,
+                19,
+                5,
+                2,
+                4,
+                2,
+                6,
+                12,
+                2,
+                3,
+                8,
+                3,
+                9,
+                4,
+                3,
+                1171,
+                1,
+                6,
+                9,
+                19,
+                26,
+                5,
+                6,
+                1,
+                2,
+                2,
+                3,
+                4,
+                1,
+                11,
+                19,
+                16,
+                11,
+                1,
+                2,
+                2,
+                1,
+                1,
+                6,
+                1,
+                1,
+                1,
+                8,
+                2,
+                2,
+                1,
+                2,
+                1,
+                2,
+                1,
+                1,
+                1,
+                12,
+                1,
+                1,
+                1,
+                1,
+                1,
+                10,
+                1,
+                1,
+                3,
+                37,
+                8,
+                3,
+                2,
+                6,
+                6,
+                2,
+                1,
+                5,
+                1,
+                3,
+                1,
+                1,
+                4,
+                5,
+                1,
+                1,
+                2,
+                1,
+                2,
+                1,
+                6,
+                6,
+                2,
+                1,
+                2,
+                5,
+                3,
+                1,
+                18,
+                2,
+                1,
+                1,
+                2,
+                4,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                8,
+                2,
+                1,
+                1,
+                1,
+                1,
+                3,
+                2,
+                1,
+                1,
+                6,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                3,
+                3,
+                1,
+                5,
+                1,
+                5,
+                6,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                11,
+                1,
+                1,
+                1,
+                1,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                2,
+                2,
+                5,
+                1,
+                10,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                2,
+                1,
+                1,
+                7,
+                1,
+                1,
+                3,
+                3,
+                2,
+                1,
+                2,
+                1,
+                1,
+                2,
+                4,
+                2,
+                1,
+                2,
+                1,
+                2,
+                1,
+                1,
+                1,
+                1
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "50%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "margin": 8
+            }
+        },
+        {
+            "type": "bar",
+            "name": "Rata-Rata Byte",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                62.48677248677249,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                66.0,
+                62.0,
+                62.0,
+                62.0,
+                66.0,
+                66.0,
+                66.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                60.0,
+                62.0,
+                66.0,
+                62.0,
+                60.0,
+                60.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                66.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                66.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                64.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                60.0,
+                60.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                66.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                66.0,
+                62.0,
+                62.0,
+                60.0,
+                62.0,
+                62.0,
+                66.0,
+                60.0,
+                62.0,
+                62.0,
+                60.0,
+                66.0,
+                62.0,
+                60.0,
+                62.0,
+                60.18181818181818,
+                62.0,
+                62.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                66.0,
+                62.0,
+                62.0,
+                60.0,
+                62.0,
+                62.0,
+                61.333333333333336,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                62.0,
+                64.0,
+                64.0,
+                62.0,
+                62.0,
+                66.0,
+                60.0,
+                62.0,
+                66.0,
+                60.0,
+                64.0,
+                62.0,
+                62.0,
+                60.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                66.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                66.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                60.0,
+                62.0,
+                60.0,
+                63.6,
+                62.0,
+                66.0,
+                66.0,
+                60.0,
+                60.0,
+                60.0,
+                60.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                60.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                62.0,
+                60.0,
+                62.0,
+                60.0
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Frekuensi",
+                "Rata-Rata Byte"
+            ],
+            "selected": {},
+            "show": true,
+            "top": "15%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "192.168.5.122",
+                "208.111.160.6",
+                "208.111.161.254",
+                "202.72.53.70",
+                "12.180.55.140",
+                "202.235.196.117",
+                "65.54.81.178",
+                "198.173.85.138",
+                "85.183.249.139",
+                "124.198.191.30",
+                "65.54.81.117",
+                "65.54.81.171",
+                "65.54.81.62",
+                "203.190.59.150",
+                "202.72.51.24",
+                "203.190.58.7",
+                "192.168.2.113",
+                "213.155.64.209",
+                "63.246.22.200",
+                "74.86.133.140",
+                "68.142.214.24",
+                "209.17.73.20",
+                "98.137.80.50",
+                "66.196.85.51",
+                "76.13.18.79",
+                "69.147.123.63",
+                "76.13.18.78",
+                "76.13.18.77",
+                "66.196.118.49",
+                "82.98.86.183",
+                "65.55.15.122",
+                "203.73.24.75",
+                "65.54.81.88",
+                "69.42.83.92",
+                "69.43.160.151",
+                "216.109.86.150",
+                "208.73.210.125",
+                "174.35.52.80",
+                "174.35.52.82",
+                "208.122.215.180",
+                "91.195.240.124",
+                "82.98.86.181",
+                "208.109.243.210",
+                "67.212.184.66",
+                "204.13.200.58",
+                "140.211.15.9",
+                "208.113.162.153",
+                "97.74.144.108",
+                "212.159.8.56",
+                "69.192.24.88",
+                "78.136.20.64",
+                "212.25.232.24",
+                "80.69.31.115",
+                "78.136.17.125",
+                "142.166.14.70",
+                "142.166.14.71",
+                "123.50.21.130",
+                "192.168.1.101",
+                "65.54.81.24",
+                "64.90.206.110",
+                "142.166.14.86",
+                "64.94.104.143",
+                "72.21.91.19",
+                "184.51.176.80",
+                "192.168.2.106",
+                "65.54.81.30",
+                "209.237.150.20",
+                "174.143.89.158",
+                "174.143.89.159",
+                "75.126.11.131",
+                "208.73.210.28",
+                "72.167.131.114",
+                "69.84.133.138",
+                "142.166.14.77",
+                "69.192.16.80",
+                "68.142.205.137",
+                "68.142.205.139",
+                "207.241.148.88",
+                "207.241.148.80",
+                "206.123.111.173",
+                "174.133.126.130",
+                "207.210.64.84",
+                "98.137.80.31",
+                "69.63.189.16",
+                "178.32.87.172",
+                "174.121.74.194",
+                "65.54.81.210",
+                "85.17.154.19",
+                "67.220.214.51",
+                "67.220.214.50",
+                "207.46.216.54",
+                "8.12.202.126",
+                "72.47.249.39",
+                "74.220.195.150",
+                "209.62.20.200",
+                "205.178.187.13",
+                "205.178.187.11",
+                "142.166.14.78",
+                "12.129.19.128",
+                "173.222.140.32",
+                "142.166.14.85",
+                "12.129.19.153",
+                "65.55.53.233",
+                "64.90.206.135",
+                "174.132.188.162",
+                "208.116.9.82",
+                "82.98.86.161",
+                "72.14.204.157",
+                "72.14.204.96",
+                "79.110.88.15",
+                "87.106.19.146",
+                "65.61.156.43",
+                "74.55.1.4",
+                "65.61.156.41",
+                "72.9.144.119",
+                "64.90.206.136",
+                "192.168.4.119",
+                "65.55.15.125",
+                "66.235.126.81",
+                "66.235.126.61",
+                "64.87.26.194",
+                "69.63.181.12",
+                "216.187.117.61",
+                "64.236.92.18",
+                "64.236.92.10",
+                "95.131.66.98",
+                "64.41.142.72",
+                "99.192.145.143",
+                "216.17.109.199",
+                "64.111.213.94",
+                "74.206.184.130",
+                "208.122.222.100",
+                "65.54.81.138",
+                "65.55.94.222",
+                "64.41.142.78",
+                "64.95.64.198",
+                "202.172.28.86",
+                "202.210.143.140",
+                "125.6.164.40",
+                "59.106.65.72",
+                "210.136.232.249",
+                "163.43.128.52",
+                "169.232.48.157",
+                "72.21.211.148",
+                "192.168.3.114",
+                "192.168.4.118",
+                "74.125.93.136",
+                "74.125.93.93",
+                "142.176.121.215",
+                "62.48.76.70",
+                "85.232.60.28",
+                "216.22.86.35",
+                "94.247.171.193",
+                "74.220.199.8",
+                "209.80.46.58",
+                "216.109.86.165",
+                "64.131.68.42",
+                "97.74.104.201",
+                "97.74.104.49",
+                "184.51.181.13",
+                "76.13.219.168",
+                "65.254.250.107",
+                "68.178.232.100",
+                "216.185.43.230",
+                "64.71.34.22",
+                "64.202.167.128",
+                "184.51.184.166",
+                "192.168.1.103",
+                "69.192.28.20",
+                "208.73.210.128",
+                "68.142.231.17",
+                "203.84.202.164",
+                "69.147.125.65",
+                "69.192.16.128",
+                "72.11.132.253",
+                "140.211.15.16",
+                "140.211.15.15",
+                "65.55.184.16",
+                "65.54.81.44",
+                "72.14.204.191",
+                "72.14.204.99",
+                "72.14.204.147",
+                "72.14.204.104",
+                "72.14.204.103",
+                "67.18.99.115",
+                "91.190.170.71",
+                "74.53.78.211",
+                "72.21.202.192",
+                "74.117.115.80",
+                "92.52.75.103",
+                "193.164.238.101",
+                "202.72.53.58",
+                "66.235.126.95",
+                "64.202.189.170",
+                "72.172.128.65",
+                "209.91.196.4",
+                "211.233.19.78",
+                "208.66.61.28",
+                "205.178.187.14",
+                "208.87.33.151",
+                "76.9.29.19",
+                "69.63.178.31",
+                "142.166.14.79",
+                "66.220.153.19",
+                "64.90.206.200",
+                "208.122.202.203",
+                "65.54.81.42",
+                "63.246.8.186",
+                "72.21.207.195",
+                "208.122.211.130",
+                "208.122.218.239",
+                "74.125.93.190",
+                "142.176.121.210",
+                "66.220.153.11",
+                "67.20.126.72",
+                "67.20.126.228",
+                "216.22.86.36",
+                "69.192.17.110",
+                "208.75.170.1",
+                "142.166.14.80",
+                "72.14.204.154",
+                "72.14.204.149",
+                "209.234.234.16",
+                "74.220.207.122",
+                "12.120.180.24",
+                "64.236.79.229",
+                "216.251.126.253",
+                "157.150.195.10",
+                "216.69.149.215",
+                "64.202.188.237",
+                "69.192.21.13",
+                "209.85.24.58",
+                "204.10.69.6",
+                "208.66.204.191",
+                "75.126.111.74",
+                "69.61.65.33",
+                "63.245.209.24",
+                "63.245.209.106",
+                "128.242.240.116",
+                "72.246.31.19",
+                "72.246.31.10",
+                "72.246.30.144",
+                "216.137.33.216",
+                "204.13.161.71",
+                "174.143.161.196",
+                "63.245.217.40",
+                "209.80.46.41",
+                "209.80.46.90",
+                "88.208.248.162",
+                "98.137.80.32",
+                "66.220.146.18",
+                "205.178.176.154",
+                "66.211.169.65",
+                "209.200.154.111",
+                "219.94.203.161",
+                "84.20.129.123",
+                "66.208.80.53",
+                "74.63.40.21",
+                "208.122.28.10",
+                "208.122.28.4",
+                "208.122.28.3",
+                "72.21.202.96",
+                "208.122.28.2",
+                "209.80.46.75",
+                "69.56.160.14",
+                "209.80.46.34",
+                "64.94.107.26"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "Ringkasan hasil pemindaian",
+            "target": "blank",
+            "subtext": "(Diurutkan berdasarkan Frekuensi)",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    },
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
+            "realtime": true,
+            "start": 20,
+            "end": 80,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "10%",
+            "top": "18%",
+            "right": "8%",
+            "height": "60%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
+        }
+    ]
+};
+        chart_fd5c3eb2fe2c4c658a1cf88de955b70d.setOption(option_fd5c3eb2fe2c4c658a1cf88de955b70d);
+    </script>
+</body>
+</html>
+
+            <h2>Hasil Pemindaian Individu</h2>
+            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="68f0f406ec924317aa6e933c00a3446b" class="chart-container" style="width:1000px; height:600px; "></div>
+    <script>
+        var chart_68f0f406ec924317aa6e933c00a3446b = echarts.init(
+            document.getElementById('68f0f406ec924317aa6e933c00a3446b'), 'white', {renderer: 'canvas'});
+        var option_68f0f406ec924317aa6e933c00a3446b = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "Frekuensi",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                112,
+                27,
+                28,
+                1,
+                2,
+                21,
+                1,
+                2,
+                3,
+                2,
+                2,
+                4,
+                1,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "50%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Frekuensi"
+            ],
+            "selected": {},
+            "show": true,
+            "top": "15%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "192.168.5.122",
+                "208.111.160.6",
+                "208.111.161.254",
+                "202.72.53.70",
+                "12.180.55.140",
+                "202.235.196.117",
+                "65.54.81.178",
+                "198.173.85.138",
+                "85.183.249.139",
+                "124.198.191.30",
+                "65.54.81.117",
+                "65.54.81.171",
+                "65.54.81.62",
+                "203.190.59.150",
+                "202.72.51.24",
+                "203.190.58.7",
+                "192.168.2.113",
+                "213.155.64.209",
+                "63.246.22.200",
+                "74.86.133.140",
+                "68.142.214.24",
+                "209.17.73.20",
+                "98.137.80.50",
+                "66.196.85.51",
+                "76.13.18.79",
+                "69.147.123.63",
+                "76.13.18.78",
+                "76.13.18.77",
+                "66.196.118.49",
+                "82.98.86.183",
+                "65.55.15.122",
+                "203.73.24.75",
+                "65.54.81.88"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "Ringkasan hasil pemindaian - ISCX-SlowDoS_split1.pcap",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    },
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
+            "realtime": true,
+            "start": 20,
+            "end": 80,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "10%",
+            "top": "18%",
+            "right": "8%",
+            "height": "60%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
+        }
+    ]
+};
+        chart_68f0f406ec924317aa6e933c00a3446b.setOption(option_68f0f406ec924317aa6e933c00a3446b);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="a17aa21accfd4f7b81293ec3f4e24470" class="chart-container" style="width:1000px; height:600px; "></div>
+    <script>
+        var chart_a17aa21accfd4f7b81293ec3f4e24470 = echarts.init(
+            document.getElementById('a17aa21accfd4f7b81293ec3f4e24470'), 'white', {renderer: 'canvas'});
+        var option_a17aa21accfd4f7b81293ec3f4e24470 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "Frekuensi",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                103,
+                12,
+                1,
+                1,
+                4,
+                3,
+                1,
+                3,
+                3,
+                1,
+                1,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                2,
+                4,
+                2,
+                3,
+                1,
+                2,
+                9,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "50%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Frekuensi"
+            ],
+            "selected": {},
+            "show": true,
+            "top": "15%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "192.168.5.122",
+                "203.73.24.75",
+                "69.42.83.92",
+                "69.43.160.151",
+                "65.54.81.62",
+                "216.109.86.150",
+                "208.73.210.125",
+                "174.35.52.80",
+                "174.35.52.82",
+                "208.122.215.180",
+                "91.195.240.124",
+                "82.98.86.181",
+                "208.109.243.210",
+                "67.212.184.66",
+                "204.13.200.58",
+                "74.86.133.140",
+                "140.211.15.9",
+                "209.17.73.20",
+                "65.54.81.171",
+                "208.113.162.153",
+                "97.74.144.108",
+                "212.159.8.56",
+                "213.155.64.209",
+                "69.192.24.88",
+                "78.136.20.64",
+                "65.54.81.178",
+                "212.25.232.24",
+                "80.69.31.115",
+                "78.136.17.125",
+                "142.166.14.70",
+                "142.166.14.71",
+                "82.98.86.183",
+                "124.198.191.30",
+                "123.50.21.130",
+                "192.168.1.101",
+                "65.54.81.117"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "Ringkasan hasil pemindaian - ISCX-SlowDoS_split2.pcap",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    },
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
+            "realtime": true,
+            "start": 20,
+            "end": 80,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "10%",
+            "top": "18%",
+            "right": "8%",
+            "height": "60%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
+        }
+    ]
+};
+        chart_a17aa21accfd4f7b81293ec3f4e24470.setOption(option_a17aa21accfd4f7b81293ec3f4e24470);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="5b60fee306bc4357b0b94bb5012a99d6" class="chart-container" style="width:1000px; height:600px; "></div>
+    <script>
+        var chart_5b60fee306bc4357b0b94bb5012a99d6 = echarts.init(
+            document.getElementById('5b60fee306bc4357b0b94bb5012a99d6'), 'white', {renderer: 'canvas'});
+        var option_5b60fee306bc4357b0b94bb5012a99d6 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "Frekuensi",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                1,
+                6,
+                81,
+                6,
+                10,
+                3,
+                22,
+                3,
+                9,
+                5,
+                7,
+                4,
+                10,
+                1,
+                10,
+                2,
+                1,
+                1,
+                2,
+                3,
+                1,
+                17,
+                2,
+                2,
+                7,
+                3,
+                1,
+                2,
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                1,
+                4,
+                2,
+                3,
+                7,
+                1,
+                6,
+                1,
+                9,
+                3,
+                8,
+                2,
+                2,
+                1,
+                2,
+                1,
+                2,
+                4,
+                1,
+                3,
+                1,
+                3,
+                15,
+                6,
+                1,
+                1,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                2,
+                1,
+                2,
+                1,
+                1,
+                1,
+                1,
+                3,
+                1,
+                5,
+                5,
+                1,
+                1,
+                1,
+                1,
+                3,
+                7,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "50%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Frekuensi"
+            ],
+            "selected": {},
+            "show": true,
+            "top": "15%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "65.55.15.122",
+                "65.54.81.24",
+                "192.168.5.122",
+                "192.168.1.101",
+                "64.90.206.110",
+                "65.54.81.178",
+                "65.54.81.62",
+                "142.166.14.86",
+                "192.168.2.113",
+                "64.94.104.143",
+                "72.21.91.19",
+                "184.51.176.80",
+                "65.54.81.171",
+                "192.168.2.106",
+                "65.54.81.30",
+                "209.237.150.20",
+                "174.143.89.158",
+                "174.143.89.159",
+                "75.126.11.131",
+                "208.73.210.28",
+                "72.167.131.114",
+                "69.84.133.138",
+                "142.166.14.77",
+                "69.192.16.80",
+                "68.142.205.137",
+                "68.142.205.139",
+                "207.241.148.88",
+                "207.241.148.80",
+                "206.123.111.173",
+                "174.133.126.130",
+                "207.210.64.84",
+                "98.137.80.31",
+                "69.63.189.16",
+                "178.32.87.172",
+                "174.121.74.194",
+                "65.54.81.210",
+                "85.17.154.19",
+                "67.220.214.51",
+                "67.220.214.50",
+                "207.46.216.54",
+                "8.12.202.126",
+                "208.113.162.153",
+                "72.47.249.39",
+                "74.220.195.150",
+                "209.62.20.200",
+                "205.178.187.13",
+                "205.178.187.11",
+                "142.166.14.78",
+                "12.129.19.128",
+                "173.222.140.32",
+                "142.166.14.85",
+                "12.129.19.153",
+                "65.55.53.233",
+                "64.90.206.135",
+                "67.212.184.66",
+                "174.132.188.162",
+                "208.116.9.82",
+                "82.98.86.161",
+                "72.14.204.157",
+                "72.14.204.96",
+                "79.110.88.15",
+                "87.106.19.146",
+                "65.61.156.43",
+                "74.55.1.4",
+                "65.61.156.41",
+                "72.9.144.119",
+                "64.90.206.136",
+                "192.168.4.119",
+                "65.55.15.125",
+                "66.235.126.81",
+                "66.235.126.61",
+                "64.87.26.194",
+                "69.63.181.12",
+                "216.187.117.61",
+                "216.109.86.150",
+                "142.166.14.71",
+                "174.35.52.80",
+                "174.35.52.82",
+                "64.236.92.18",
+                "64.236.92.10",
+                "95.131.66.98",
+                "208.122.215.180",
+                "204.13.200.58",
+                "64.41.142.72",
+                "99.192.145.143",
+                "216.17.109.199",
+                "64.111.213.94",
+                "74.206.184.130",
+                "208.122.222.100"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "Ringkasan hasil pemindaian - ISCX-SlowDoS_split6.pcap",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    },
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
+            "realtime": true,
+            "start": 20,
+            "end": 80,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "10%",
+            "top": "18%",
+            "right": "8%",
+            "height": "60%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
+        }
+    ]
+};
+        chart_5b60fee306bc4357b0b94bb5012a99d6.setOption(option_5b60fee306bc4357b0b94bb5012a99d6);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="0f17d4791db941b59d2458e06c1f8b38" class="chart-container" style="width:1000px; height:600px; "></div>
+    <script>
+        var chart_0f17d4791db941b59d2458e06c1f8b38 = echarts.init(
+            document.getElementById('0f17d4791db941b59d2458e06c1f8b38'), 'white', {renderer: 'canvas'});
+        var option_0f17d4791db941b59d2458e06c1f8b38 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "Frekuensi",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                108,
+                16,
+                3,
+                4,
+                10,
+                6,
+                1,
+                4,
+                1,
+                16,
+                1,
+                3,
+                2,
+                1,
+                5,
+                1,
+                4,
+                3,
+                2,
+                8,
+                4,
+                12,
+                3,
+                1,
+                1,
+                3,
+                2,
+                2,
+                1,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                2,
+                2,
+                1,
+                1,
+                2,
+                8,
+                9,
+                3,
+                2,
+                5,
+                1,
+                1,
+                2,
+                1,
+                2,
+                1,
+                1,
+                2,
+                1,
+                1,
+                1,
+                1,
+                2,
+                1,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                1,
+                2,
+                2,
+                1,
+                1,
+                2,
+                1,
+                14,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "50%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Frekuensi"
+            ],
+            "selected": {},
+            "show": true,
+            "top": "15%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "192.168.5.122",
+                "69.84.133.138",
+                "142.166.14.77",
+                "184.51.176.80",
+                "65.54.81.30",
+                "65.54.81.138",
+                "65.55.15.122",
+                "65.54.81.24",
+                "65.54.81.88",
+                "65.54.81.62",
+                "65.55.94.222",
+                "209.237.150.20",
+                "75.126.11.131",
+                "207.210.64.84",
+                "64.41.142.72",
+                "64.41.142.78",
+                "174.132.188.162",
+                "64.95.64.198",
+                "74.55.1.4",
+                "65.54.81.171",
+                "65.54.81.178",
+                "202.172.28.86",
+                "202.210.143.140",
+                "125.6.164.40",
+                "59.106.65.72",
+                "208.73.210.28",
+                "210.136.232.249",
+                "163.43.128.52",
+                "169.232.48.157",
+                "64.90.206.110",
+                "64.90.206.135",
+                "72.21.211.148",
+                "192.168.3.114",
+                "192.168.4.118",
+                "205.178.187.13",
+                "205.178.187.11",
+                "67.212.184.66",
+                "74.125.93.136",
+                "74.125.93.93",
+                "142.176.121.215",
+                "216.109.86.150",
+                "174.35.52.82",
+                "174.35.52.80",
+                "97.74.144.108",
+                "212.159.8.56",
+                "204.13.200.58",
+                "208.113.162.153",
+                "62.48.76.70",
+                "85.232.60.28",
+                "192.168.2.106",
+                "80.69.31.115",
+                "216.22.86.35",
+                "94.247.171.193",
+                "74.220.199.8",
+                "209.80.46.58",
+                "216.109.86.165",
+                "64.94.104.143",
+                "72.21.91.19",
+                "85.17.154.19",
+                "64.131.68.42",
+                "208.111.161.254",
+                "208.111.160.6",
+                "192.168.4.119",
+                "97.74.104.201",
+                "97.74.104.49",
+                "184.51.181.13",
+                "76.13.219.168",
+                "65.254.250.107",
+                "68.178.232.100",
+                "216.185.43.230",
+                "64.71.34.22",
+                "64.202.167.128",
+                "72.167.131.114",
+                "78.136.20.64",
+                "69.192.24.88",
+                "184.51.184.166",
+                "192.168.1.103",
+                "69.192.28.20",
+                "208.73.210.128"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "Ringkasan hasil pemindaian - ISCX-SlowDoS_split5.pcap",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    },
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
+            "realtime": true,
+            "start": 20,
+            "end": 80,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "10%",
+            "top": "18%",
+            "right": "8%",
+            "height": "60%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
+        }
+    ]
+};
+        chart_0f17d4791db941b59d2458e06c1f8b38.setOption(option_0f17d4791db941b59d2458e06c1f8b38);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="92496808c64049a288622133ccd4bba4" class="chart-container" style="width:1000px; height:600px; "></div>
+    <script>
+        var chart_92496808c64049a288622133ccd4bba4 = echarts.init(
+            document.getElementById('92496808c64049a288622133ccd4bba4'), 'white', {renderer: 'canvas'});
+        var option_92496808c64049a288622133ccd4bba4 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "Frekuensi",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                132,
+                2,
+                5,
+                1,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                3,
+                1,
+                57,
+                62,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                2,
+                1,
+                2,
+                1,
+                1,
+                1,
+                1
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "50%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Frekuensi"
+            ],
+            "selected": {},
+            "show": true,
+            "top": "15%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "192.168.5.122",
+                "82.98.86.183",
+                "65.54.81.171",
+                "142.166.14.85",
+                "192.168.2.113",
+                "82.98.86.181",
+                "68.142.231.17",
+                "142.166.14.86",
+                "203.84.202.164",
+                "69.147.125.65",
+                "98.137.80.50",
+                "12.180.55.140",
+                "69.192.16.128",
+                "208.111.160.6",
+                "208.111.161.254",
+                "72.11.132.253",
+                "140.211.15.16",
+                "65.54.81.117",
+                "140.211.15.15",
+                "65.55.184.16",
+                "74.86.133.140",
+                "140.211.15.9",
+                "209.17.73.20",
+                "65.54.81.44",
+                "142.166.14.71",
+                "72.14.204.191",
+                "72.14.204.99",
+                "72.14.204.147",
+                "72.14.204.104",
+                "72.14.204.103"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "Ringkasan hasil pemindaian - ISCX-SlowDoS_split.pcap",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    },
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
+            "realtime": true,
+            "start": 20,
+            "end": 80,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "10%",
+            "top": "18%",
+            "right": "8%",
+            "height": "60%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
+        }
+    ]
+};
+        chart_92496808c64049a288622133ccd4bba4.setOption(option_92496808c64049a288622133ccd4bba4);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="162f97862d174f9ba980e3817937cfae" class="chart-container" style="width:1000px; height:600px; "></div>
+    <script>
+        var chart_162f97862d174f9ba980e3817937cfae = echarts.init(
+            document.getElementById('162f97862d174f9ba980e3817937cfae'), 'white', {renderer: 'canvas'});
+        var option_162f97862d174f9ba980e3817937cfae = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "Frekuensi",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                122,
+                4,
+                1,
+                59,
+                1,
+                1,
+                2,
+                3,
+                2,
+                1,
+                2,
+                1,
+                5,
+                2,
+                4,
+                2,
+                1,
+                5,
+                1,
+                2,
+                1,
+                2,
+                1,
+                3,
+                16,
+                3,
+                2,
+                1,
+                2,
+                1,
+                1,
+                1,
+                2,
+                1,
+                1,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "50%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Frekuensi"
+            ],
+            "selected": {},
+            "show": true,
+            "top": "15%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "192.168.5.122",
+                "65.54.81.44",
+                "67.18.99.115",
+                "203.73.24.75",
+                "216.109.86.150",
+                "192.168.2.113",
+                "174.35.52.80",
+                "198.173.85.138",
+                "174.35.52.82",
+                "204.13.200.58",
+                "65.54.81.24",
+                "209.62.20.200",
+                "82.98.86.181",
+                "65.54.81.117",
+                "65.54.81.62",
+                "91.195.240.124",
+                "124.198.191.30",
+                "174.132.188.162",
+                "216.185.43.230",
+                "91.190.170.71",
+                "74.53.78.211",
+                "97.74.144.108",
+                "72.21.202.192",
+                "68.178.232.100",
+                "64.202.167.128",
+                "74.117.115.80",
+                "68.142.231.17",
+                "142.166.14.86",
+                "74.55.1.4",
+                "80.69.31.115",
+                "184.51.184.166",
+                "78.136.20.64",
+                "65.54.81.171",
+                "85.232.60.28",
+                "69.192.24.88",
+                "178.32.87.172",
+                "92.52.75.103",
+                "193.164.238.101",
+                "78.136.17.125",
+                "65.54.81.178",
+                "213.155.64.209",
+                "202.72.53.58",
+                "82.98.86.183",
+                "142.166.14.71",
+                "66.235.126.95"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "Ringkasan hasil pemindaian - ISCX-SlowDoS_split3.pcap",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    },
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
+            "realtime": true,
+            "start": 20,
+            "end": 80,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "10%",
+            "top": "18%",
+            "right": "8%",
+            "height": "60%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
+        }
+    ]
+};
+        chart_162f97862d174f9ba980e3817937cfae.setOption(option_162f97862d174f9ba980e3817937cfae);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="5b3b7023f59449dc953cc8590f1a1d68" class="chart-container" style="width:1000px; height:600px; "></div>
+    <script>
+        var chart_5b3b7023f59449dc953cc8590f1a1d68 = echarts.init(
+            document.getElementById('5b3b7023f59449dc953cc8590f1a1d68'), 'white', {renderer: 'canvas'});
+        var option_5b3b7023f59449dc953cc8590f1a1d68 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "Frekuensi",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                193,
+                3,
+                8,
+                3,
+                17,
+                2,
+                1,
+                3,
+                1,
+                1,
+                3,
+                2,
+                1,
+                4,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                6,
+                2,
+                2,
+                3,
+                4,
+                6,
+                2,
+                2,
+                1,
+                1,
+                2,
+                2,
+                1,
+                1,
+                2,
+                2,
+                1,
+                1
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "50%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Frekuensi"
+            ],
+            "selected": {},
+            "show": true,
+            "top": "15%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "192.168.5.122",
+                "192.168.1.101",
+                "65.54.81.62",
+                "209.237.150.20",
+                "209.62.20.200",
+                "213.155.64.209",
+                "82.98.86.183",
+                "91.195.240.124",
+                "208.116.9.82",
+                "82.98.86.161",
+                "74.117.115.80",
+                "192.168.4.119",
+                "64.202.189.170",
+                "65.54.81.138",
+                "72.172.128.65",
+                "206.123.111.173",
+                "209.91.196.4",
+                "211.233.19.78",
+                "169.232.48.157",
+                "208.66.61.28",
+                "69.84.133.138",
+                "142.166.14.86",
+                "68.142.231.17",
+                "82.98.86.181",
+                "216.109.86.150",
+                "178.32.87.172",
+                "174.35.52.80",
+                "65.54.81.171",
+                "174.35.52.82",
+                "204.13.200.58",
+                "65.54.81.178",
+                "205.178.187.14",
+                "205.178.187.13",
+                "205.178.187.11",
+                "65.54.81.44",
+                "142.166.14.70",
+                "65.54.81.24",
+                "192.168.3.114",
+                "192.168.2.113",
+                "208.87.33.151",
+                "216.185.43.230"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "Ringkasan hasil pemindaian - ISCX-SlowDoS_split4.pcap",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    },
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
+            "realtime": true,
+            "start": 20,
+            "end": 80,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "10%",
+            "top": "18%",
+            "right": "8%",
+            "height": "60%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
+        }
+    ]
+};
+        chart_5b3b7023f59449dc953cc8590f1a1d68.setOption(option_5b3b7023f59449dc953cc8590f1a1d68);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="89273d83ff4f4c10ac96b5aa75e7abd2" class="chart-container" style="width:1000px; height:600px; "></div>
+    <script>
+        var chart_89273d83ff4f4c10ac96b5aa75e7abd2 = echarts.init(
+            document.getElementById('89273d83ff4f4c10ac96b5aa75e7abd2'), 'white', {renderer: 'canvas'});
+        var option_89273d83ff4f4c10ac96b5aa75e7abd2 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "Frekuensi",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                1,
+                3,
+                41,
+                3,
+                2,
+                7,
+                1,
+                3,
+                4,
+                9,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                4,
+                4,
+                2,
+                1,
+                6,
+                2,
+                11,
+                2,
+                1,
+                1,
+                4,
+                4,
+                1,
+                1,
+                1,
+                1,
+                4,
+                4,
+                1,
+                1,
+                11,
+                16,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                8,
+                25,
+                5,
+                2,
+                4,
+                1,
+                4,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                104,
+                3,
+                2,
+                2,
+                2,
+                3,
+                7,
+                1,
+                1,
+                1
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "50%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Frekuensi"
+            ],
+            "selected": {},
+            "show": true,
+            "top": "15%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "76.9.29.19",
+                "204.13.200.58",
+                "192.168.5.122",
+                "69.63.178.31",
+                "142.166.14.79",
+                "64.90.206.110",
+                "66.220.153.19",
+                "64.90.206.135",
+                "64.90.206.200",
+                "65.54.81.62",
+                "65.54.81.171",
+                "192.168.1.101",
+                "65.54.81.210",
+                "216.109.86.165",
+                "208.122.202.203",
+                "208.73.210.28",
+                "192.168.2.113",
+                "65.54.81.30",
+                "69.84.133.138",
+                "65.54.81.42",
+                "67.212.184.66",
+                "63.246.8.186",
+                "72.21.207.195",
+                "72.21.91.19",
+                "216.109.86.150",
+                "208.122.211.130",
+                "208.122.218.239",
+                "174.35.52.80",
+                "174.35.52.82",
+                "74.125.93.190",
+                "74.125.93.136",
+                "142.176.121.210",
+                "66.220.153.11",
+                "208.113.162.153",
+                "97.74.144.108",
+                "212.159.8.56",
+                "69.192.24.88",
+                "67.20.126.72",
+                "74.220.195.150",
+                "67.20.126.228",
+                "173.222.140.32",
+                "69.192.16.80",
+                "216.22.86.36",
+                "69.192.17.110",
+                "80.69.31.115",
+                "78.136.20.64",
+                "202.172.28.86",
+                "202.210.143.140",
+                "125.6.164.40",
+                "82.98.86.161",
+                "208.75.170.1",
+                "210.136.232.249",
+                "142.166.14.80",
+                "72.14.204.154",
+                "72.14.204.96",
+                "72.14.204.149",
+                "209.234.234.16",
+                "74.220.207.122",
+                "12.120.180.24",
+                "59.106.65.72",
+                "64.236.79.229",
+                "216.251.126.253",
+                "157.150.195.10",
+                "64.94.104.143",
+                "67.220.214.50",
+                "97.74.104.201",
+                "216.69.149.215",
+                "64.202.188.237",
+                "97.74.104.49",
+                "69.192.21.13",
+                "174.132.188.162",
+                "208.73.210.128",
+                "74.55.1.4",
+                "209.85.24.58"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "Ringkasan hasil pemindaian - ISCX-SlowDoS_split7.pcap",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    },
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
+            "realtime": true,
+            "start": 20,
+            "end": 80,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "10%",
+            "top": "18%",
+            "right": "8%",
+            "height": "60%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
+        }
+    ]
+};
+        chart_89273d83ff4f4c10ac96b5aa75e7abd2.setOption(option_89273d83ff4f4c10ac96b5aa75e7abd2);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="537c5db5e9a34d029c8ca4c8a95bcf92" class="chart-container" style="width:1000px; height:600px; "></div>
+    <script>
+        var chart_537c5db5e9a34d029c8ca4c8a95bcf92 = echarts.init(
+            document.getElementById('537c5db5e9a34d029c8ca4c8a95bcf92'), 'white', {renderer: 'canvas'});
+        var option_537c5db5e9a34d029c8ca4c8a95bcf92 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "Frekuensi",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                754,
+                10,
+                2,
+                3,
+                2,
+                1,
+                1,
+                1,
+                1,
+                3,
+                1,
+                1,
+                1,
+                2,
+                8,
+                4,
+                1,
+                1,
+                9,
+                2,
+                2,
+                2,
+                4,
+                4,
+                2,
+                4,
+                27,
+                1,
+                1,
+                5,
+                1,
+                1,
+                1,
+                1,
+                3,
+                1,
+                1,
+                2,
+                1,
+                1,
+                1,
+                1,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                6,
+                2,
+                1,
+                2,
+                1,
+                2
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "50%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Frekuensi"
+            ],
+            "selected": {},
+            "show": true,
+            "top": "15%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "67.220.214.50",
+                "204.10.69.6",
+                "69.192.21.13",
+                "64.90.206.135",
+                "97.74.104.49",
+                "97.74.144.108",
+                "208.66.204.191",
+                "97.74.104.201",
+                "69.192.24.88",
+                "62.48.76.70",
+                "80.69.31.115",
+                "75.126.111.74",
+                "193.164.238.101",
+                "85.232.60.28",
+                "78.136.20.64",
+                "65.54.81.171",
+                "212.25.232.24",
+                "92.52.75.103",
+                "69.84.133.138",
+                "142.166.14.77",
+                "65.54.81.210",
+                "216.109.86.150",
+                "174.35.52.82",
+                "174.35.52.80",
+                "204.13.200.58",
+                "64.90.206.110",
+                "192.168.5.122",
+                "69.61.65.33",
+                "216.187.117.61",
+                "65.54.81.62",
+                "63.245.209.24",
+                "63.245.209.106",
+                "64.90.206.200",
+                "72.21.91.19",
+                "65.54.81.30",
+                "128.242.240.116",
+                "174.143.89.159",
+                "209.237.150.20",
+                "72.246.31.19",
+                "72.246.31.10",
+                "72.246.30.144",
+                "216.137.33.216",
+                "192.168.3.114",
+                "204.13.161.71",
+                "64.87.26.194",
+                "174.143.161.196",
+                "65.55.15.125",
+                "65.54.81.42",
+                "75.126.11.131",
+                "65.54.81.178",
+                "63.245.217.40",
+                "209.80.46.41",
+                "208.73.210.28",
+                "207.241.148.88",
+                "207.241.148.80",
+                "209.80.46.90",
+                "192.168.4.119"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "Ringkasan hasil pemindaian - ISCX-SlowDoS_split8.pcap",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    },
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
+            "realtime": true,
+            "start": 20,
+            "end": 80,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "10%",
+            "top": "18%",
+            "right": "8%",
+            "height": "60%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
+        }
+    ]
+};
+        chart_537c5db5e9a34d029c8ca4c8a95bcf92.setOption(option_537c5db5e9a34d029c8ca4c8a95bcf92);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="0af449c9189443eea2a315f90e251aab" class="chart-container" style="width:1000px; height:600px; "></div>
+    <script>
+        var chart_0af449c9189443eea2a315f90e251aab = echarts.init(
+            document.getElementById('0af449c9189443eea2a315f90e251aab'), 'white', {renderer: 'canvas'});
+        var option_0af449c9189443eea2a315f90e251aab = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "Frekuensi",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                306,
+                3,
+                1,
+                1,
+                26,
+                12,
+                1,
+                3,
+                2,
+                3,
+                2,
+                2,
+                4,
+                9,
+                2,
+                1,
+                1,
+                4,
+                1,
+                1,
+                1,
+                2,
+                4,
+                1,
+                2,
+                1,
+                2,
+                2,
+                1,
+                2,
+                4,
+                4,
+                2,
+                2,
+                4,
+                2,
+                1,
+                2,
+                1,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "50%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Frekuensi"
+            ],
+            "selected": {},
+            "show": true,
+            "top": "15%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "67.220.214.50",
+                "65.54.81.30",
+                "69.84.133.138",
+                "142.166.14.77",
+                "192.168.5.122",
+                "68.142.205.137",
+                "88.208.248.162",
+                "98.137.80.32",
+                "174.121.74.194",
+                "66.220.146.18",
+                "65.54.81.42",
+                "205.178.176.154",
+                "174.133.126.130",
+                "207.210.64.84",
+                "68.142.205.139",
+                "209.80.46.41",
+                "66.211.169.65",
+                "65.54.81.62",
+                "67.212.184.66",
+                "205.178.187.13",
+                "205.178.187.11",
+                "209.200.154.111",
+                "163.43.128.52",
+                "219.94.203.161",
+                "67.18.99.115",
+                "84.20.129.123",
+                "65.54.81.171",
+                "66.208.80.53",
+                "65.54.81.210",
+                "216.109.86.150",
+                "174.35.52.82",
+                "174.35.52.80",
+                "204.13.200.58",
+                "192.168.1.101",
+                "74.63.40.21",
+                "208.122.28.10",
+                "208.122.28.4",
+                "208.122.28.3",
+                "72.21.202.96",
+                "208.122.28.2",
+                "192.168.2.113",
+                "75.126.11.131",
+                "209.80.46.75",
+                "69.56.160.14",
+                "209.80.46.34",
+                "64.94.107.26",
+                "64.94.104.143",
+                "72.21.91.19",
+                "142.166.14.70",
+                "142.166.14.79"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "Ringkasan hasil pemindaian - ISCX-SlowDoS_split9.pcap",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    },
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
+            "realtime": true,
+            "start": 20,
+            "end": 80,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "10%",
+            "top": "18%",
+            "right": "8%",
+            "height": "60%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
+        }
+    ]
+};
+        chart_0af449c9189443eea2a315f90e251aab.setOption(option_0af449c9189443eea2a315f90e251aab);
+    </script>
+</body>
+</html>
+
+<html>
